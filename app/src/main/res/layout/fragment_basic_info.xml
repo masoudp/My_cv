@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".features.detail.fragment.BasicInfoFragment">
+
+    <Button
+        android:id="@+id/btn_view_more"
+        style="@style/AppTheme.Button"
+        android:layout_width="@dimen/login_btn_width"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginBottom="@dimen/spacing_xlarge"
+        android:text="@string/label_btn_view_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="tvLabel" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label"
+        tools:text="tvLocation" />
+
+
+    <TextView
+        android:id="@+id/tv_contact_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:text="@string/label_contact_details"
+        android:textAppearance="@style/TextAppearance.Large.Bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/vw_split"
+        app:layout_constraintTop_toBottomOf="@+id/vw_split" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xxlarge"
+        android:textAppearance="@style/TextAppearance.Large.Bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        tools:text="my name" />
+
+    <View
+        android:id="@+id/vw_split"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="@dimen/spacing_xxxlarge"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginEnd="@dimen/spacing_xxxlarge"
+        android:background="@color/profile_box_bg_color"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xxxlarge"
+        android:layout_marginTop="@dimen/spacing_xxlarge"
+        android:layout_marginEnd="@dimen/spacing_xxxlarge"
+        android:background="@color/profile_box_bg_color"
+        android:padding="@dimen/spacing_xxxlarge"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contact_details">
+
+
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="@dimen/profile_icon_width"
+            android:layout_height="@dimen/profile_icon_height"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_phone_iphone_white_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgMail"
+            android:layout_width="@dimen/profile_icon_width"
+            android:layout_height="@dimen/profile_icon_height"
+            android:layout_marginTop="@dimen/spacing_xxxlarge"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_mail_white_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPhone" />
+
+        <ImageView
+            android:id="@+id/img_address"
+            android:layout_width="@dimen/profile_icon_width"
+            android:layout_height="@dimen/profile_icon_height"
+            android:layout_marginTop="@dimen/spacing_xxxlarge"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_location_on_white_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgMail" />
+
+        <TextView
+            android:id="@+id/tv_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:autoLink="email"
+            android:textAppearance="@style/TextAppearance.Normal"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/imgMail"
+            app:layout_constraintStart_toEndOf="@id/imgMail"
+            app:layout_constraintTop_toTopOf="@id/imgMail" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:autoLink="phone"
+            android:textAppearance="@style/TextAppearance.Normal"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/imgPhone"
+            app:layout_constraintStart_toEndOf="@id/imgPhone"
+            app:layout_constraintTop_toTopOf="@id/imgPhone" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:textAppearance="@style/TextAppearance.Normal"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/img_address"
+            app:layout_constraintStart_toEndOf="@id/img_address"
+            app:layout_constraintTop_toTopOf="@id/img_address" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/profile_image_width"
+        android:layout_height="@dimen/profile_image_width"
+        android:layout_marginTop="@dimen/spacing_xxxlarge"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:civ_border_color="@color/profile_image_border_color"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

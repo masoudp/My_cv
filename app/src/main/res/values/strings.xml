@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyCV</string>
+
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_error_title">Sorry</string>
+
+
+    <!-- Error View -->
+    <string name="error_title">Oops</string>
+    <string name="error_message">There was a problem loading data, please try again!</string>
+    <string name="error_reload">Reload</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="label_btn_login">login</string>
+    <string name="error_please_enter_email">Please enter email</string>
+    <string name="error_please_enter_password">Please enter password</string>
+    <string name="error_invalid_credentials">Invalid credentials</string>
+    <string name="label_btn_view_more">Read More …</string>
+    <string name="label_tab_basic_info">Basic Information</string>
+    <string name="label_tab_skills">Skills</string>
+    <string name="label_tab_work_history">Experiences</string>
+    <string name="label_tab_education_history">Education</string>
+    <string name="label_tab_about_me">About Me</string>
+    <string name="label_nav_bar_header_title">My CV Demo Application</string>
+    <string name="label_nav_bar_header_desc">This application displays my CV.</string>
+    <string name="label_nav_bar_exit">Exit</string>
+    <string name="label_contact_details">Contact Details</string>
+    <string name="label_phone_prefix">Phone: %s</string>
+    <string name="label_mail_prefix">Email: %s</string>
+    <string name="label_address_prefix">Address: %s</string>
+    <string name="label_btn_prev">Previous</string>
+    <string name="label_btn_next">Next</string>
+    <string name="label_work_time">Since %s to %s</string>
+    <string name="sample_email">masoud.pakbaz80@gmail.com</string>
+    <string name="sample_pass">123456</string>
+
+</resources>

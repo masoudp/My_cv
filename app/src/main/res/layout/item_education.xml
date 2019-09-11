@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crdv_item"
+    style="@style/BaseCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_xxxlarge">
+
+
+        <TextView
+            android:id="@+id/tv_instution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="tvInstution"
+            android:textAppearance="@style/TextAppearance.Normal.Bold"
+            android:textColor="@color/md_black_1000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_study_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            tools:text="tvStudyType"
+            android:textAppearance="@style/TextAppearance.Normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_instution" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/vw_split"
+            android:background="@color/md_grey_400"
+            app:layout_constraintTop_toBottomOf="@+id/tv_study_type"
+            android:layout_marginTop="@dimen/spacing_xxlarge"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_education_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            tools:text="tvEducationTime"
+            android:textAppearance="@style/TextAppearance.Normal"
+            android:textColor="@color/md_grey_600"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_split" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            tools:text="area"
+            android:textAppearance="@style/TextAppearance.Small.Bold"
+            android:textColor="@color/md_grey_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_education_time" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

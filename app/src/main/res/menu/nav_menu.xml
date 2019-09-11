@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_basic_info"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/label_tab_basic_info"/>
+        <item
+            android:id="@+id/nav_skills"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/label_tab_skills"/>
+        <item
+            android:id="@+id/nav_works"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/label_tab_work_history"/>
+        <item
+            android:id="@+id/nav_education"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/label_tab_education_history"/>
+        <item
+            android:id="@+id/nav_about_me"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/label_tab_about_me"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/label_nav_bar_exit"/>
+    </group>
+
+</menu>
